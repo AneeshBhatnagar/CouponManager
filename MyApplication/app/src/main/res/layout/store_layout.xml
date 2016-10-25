@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:paddingBottom="0dp">
+
+            <TextView
+                android:id="@+id/storeHolderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Store Name:"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/storeHolderName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/storeHolderName"
+                android:text="RADIO20"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+            android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/storeHolderCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/storeHolderName2"
+                android:layout_marginBottom="4dp"
+                android:text="Number of Coupons:"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/storeHolderCount2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/storeHolderName2"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/storeHolderCount"
+                android:text="20"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/storeHolderType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/storeHolderCount2"
+                android:layout_marginBottom="4dp"
+                android:text="Store Type:"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/storeHolderType2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/storeHolderCount2"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/storeHolderType"
+                android:text="Online"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/storeHolderUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/storeHolderType2"
+                android:layout_marginBottom="4dp"
+                android:text="URL:"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/storeHolderUrl2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/storeHolderType2"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/storeHolderUrl"
+                android:text="http://www.google.com"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/storeHolderUrl"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/image_show_all"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:contentDescription="Show Coupons"
+                    android:src="@drawable/ic_list" />
+
+                <ImageView
+                    android:id="@+id/image_web"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:contentDescription="Visit Website"
+                    android:src="@drawable/ic_web" />
+
+                <ImageView
+                    android:id="@+id/image_edit2"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:contentDescription="Edit"
+                    android:src="@drawable/ic_edit" />
+
+                <ImageView
+                    android:id="@+id/image_delete2"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:contentDescription="Delete"
+                    android:src="@drawable/ic_delete" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

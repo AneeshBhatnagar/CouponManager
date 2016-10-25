@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:paddingBottom="0dp">
+
+            <TextView
+                android:id="@+id/holderCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Coupon Code:"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/holderCode2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/holderCode"
+                android:text="RADIO20"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+            android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/holderStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/holderCode2"
+                android:layout_marginBottom="4dp"
+                android:text="Store Name:"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/holderStore2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/holderCode2"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/holderStore"
+                android:text="Paytm"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/holderExpiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/holderStore2"
+                android:layout_marginBottom="4dp"
+                android:text="Expiry Date:"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/holderExpiry2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/holderStore2"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/holderExpiry"
+                android:text="11/08/2015"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/holderDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/holderExpiry2"
+                android:layout_marginBottom="4dp"
+                android:text="Description:"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/holderDesc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/holderExpiry2"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/holderDesc"
+                android:text="Get Rs. 200 Off on recharge of 400 or above!"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/holderType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/holderDesc2"
+                android:layout_marginBottom="4dp"
+                android:text="Code Type:"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/holderType2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/holderDesc2"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/holderType"
+                android:text="Discount Code"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/holderValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/holderType2"
+                android:layout_marginBottom="4dp"
+                android:text="Gift Card Value:"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/holderValue2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/holderType2"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/holderValue"
+                android:text="500"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/holderValue2"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_copy"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:contentDescription="Copy to Clipboard"
+                    android:src="@drawable/ic_copy" />
+
+                <ImageView
+                    android:id="@+id/image_share"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:contentDescription="Share Code"
+                    android:src="@drawable/ic_share" />
+
+                <ImageView
+                    android:id="@+id/image_done"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:contentDescription="Mark Used"
+                    android:src="@drawable/ic_mark" />
+
+                <ImageView
+                    android:id="@+id/image_edit"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:contentDescription="Edit"
+                    android:src="@drawable/ic_edit" />
+
+                <ImageView
+                    android:id="@+id/image_delete"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:contentDescription="Delete"
+                    android:src="@drawable/ic_delete" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,138 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:padding="25dp"
+    tools:context="com.aneeshbhatnagar.couponmanager.activity.AddNewCouponFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinnerStore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:paddingTop="10dp"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/etCouponCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerStore"
+                android:layout_marginBottom="15dp"
+                android:hint="Coupon Code"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etCouponDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etCouponCode"
+                android:layout_marginBottom="15dp"
+                android:hint="Coupon Description"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/linearCoupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etCouponDesc"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etExpiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Expiry Date (dd-mm-yyyy)"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/ivDatePick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:baselineAlignBottom="@id/etExpiry"
+                    android:src="@drawable/ic_event" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rgCodeType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearCoupon"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Type of Code"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/rbDiscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Discount Coupon"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/rbGiftCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gift Card"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/etGiftValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rgCodeType"
+                android:layout_marginBottom="15dp"
+                android:hint="Gift Card Value"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etGiftValue"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSaveCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="10dp"
+                    android:text="Save"
+                    android:textColor="@color/textColorPrimary" />
+
+                <Button
+                    android:id="@+id/btnCancelCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="10dp"
+                    android:text="Cancel"
+                    android:textColor="@color/textColorPrimary" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:padding="25dp"
+    tools:context="com.aneeshbhatnagar.couponmanager.activity.AddNewStoreFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etStore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:hint="Store Name"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rgStoreType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etStore">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Select Store Type"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/rbOnline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:checked="true"
+                    android:text="Online Store/Website"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/rbOffline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Offline/Physical Store"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/etUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rgStoreType"
+                android:layout_marginBottom="20dp"
+                android:hint="URL" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etUrl"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSaveStore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="10dp"
+                    android:text="Save"
+                    android:textColor="@color/textColorPrimary" />
+
+                <Button
+                    android:id="@+id/btnCancelStore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="10dp"
+                    android:text="Cancel"
+                    android:textColor="@color/textColorPrimary" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

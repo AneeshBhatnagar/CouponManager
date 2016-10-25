@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Coupon Manager</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_new">Add New</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_home">All Coupons</string>
+    <string name="nav_item_stores">Stores</string>
+    <string name="nav_item_unused">Unused Coupons</string>
+    <string name="nav_item_used">Used Coupons</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_stores</item>
+        <item>@string/nav_item_unused</item>
+        <item>@string/nav_item_used</item>
+    </string-array>
+
+    <string name="title_home">Coupons</string>
+    <string name="title_stores">Saved Stores</string>
+    <string name="title_unused">Unused Coupons</string>
+    <string name="title_used">Used Coupons</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>
